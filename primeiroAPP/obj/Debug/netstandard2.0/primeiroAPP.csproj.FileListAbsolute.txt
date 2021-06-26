@@ -1,0 +1,14 @@
+C:\Users\Administrator\source\repos\primeiroAPP\primeiroAPP\primeiroAPP\bin\Debug\netstandard2.0\primeiroAPP.deps.json
+C:\Users\Administrator\source\repos\primeiroAPP\primeiroAPP\primeiroAPP\bin\Debug\netstandard2.0\primeiroAPP.dll
+C:\Users\Administrator\source\repos\primeiroAPP\primeiroAPP\primeiroAPP\bin\Debug\netstandard2.0\ref\primeiroAPP.dll
+C:\Users\Administrator\source\repos\primeiroAPP\primeiroAPP\primeiroAPP\bin\Debug\netstandard2.0\primeiroAPP.pdb
+C:\Users\Administrator\source\repos\primeiroAPP\primeiroAPP\primeiroAPP\obj\Debug\netstandard2.0\primeiroAPP.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\primeiroAPP\primeiroAPP\primeiroAPP\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Administrator\source\repos\primeiroAPP\primeiroAPP\primeiroAPP\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Administrator\source\repos\primeiroAPP\primeiroAPP\primeiroAPP\obj\Debug\netstandard2.0\primeiroAPP.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\primeiroAPP\primeiroAPP\primeiroAPP\obj\Debug\netstandard2.0\primeiroAPP.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\primeiroAPP\primeiroAPP\primeiroAPP\obj\Debug\netstandard2.0\primeiroAPP.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\primeiroAPP\primeiroAPP\primeiroAPP\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Administrator\source\repos\primeiroAPP\primeiroAPP\primeiroAPP\obj\Debug\netstandard2.0\primeiroAPP.dll
+C:\Users\Administrator\source\repos\primeiroAPP\primeiroAPP\primeiroAPP\obj\Debug\netstandard2.0\ref\primeiroAPP.dll
+C:\Users\Administrator\source\repos\primeiroAPP\primeiroAPP\primeiroAPP\obj\Debug\netstandard2.0\primeiroAPP.pdb
