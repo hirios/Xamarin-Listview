@@ -8,30 +8,38 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
+using System.Diagnostics;
+using System.IO;
+using System.Net;
+using System.Net.Http;
+
+
 
 namespace primeiroAPP
 {
     public partial class MainPage : ContentPage
     {
-        ObservableCollection<ParseItem> NewsItemList = new ObservableCollection<ParseItem>();
-        PYTHON python = new PYTHON();
+        PYTHON PYTHON = new PYTHON();
         public MainPage()
         {
             InitializeComponent();
-            
-
         }
 
-        void clicado(object sender, EventArgs e)
+        public async void clicado(object sender, EventArgs e)
         {
             string pesquisa = "My hero";
-            string output = python.requests("https://api.reelgood.com/v3.0/content/search/content?page=1&pageSize=50&region=us&take=50&terms=" + pesquisa);
+            string output = await PYTHON.Requests("https://api.reelgood.com/v3.0/content/search/content?page=1&pageSize=50&region=us&take=50&terms=" + pesquisa);
             ParseItem date = JsonConvert.DeserializeObject<ParseItem>(output);
-
-            /*Info initsta1 = new Info() { slug = "teste", title = "testing....1...", isVisible = true };*/
-            
             listview.ItemsSource = date.Items;
+        }
 
+        public async void OnTextChanged(object sender, EventArgs e)
+        {
+            SearchBar searchBar = (SearchBar)sender;
+            string pesquisa = searchBar.Text;
+            string output = await PYTHON.Requests("https://api.reelgood.com/v3.0/content/search/content?page=1&pageSize=50&region=us&take=50&terms=" + pesquisa);
+            ParseItem date = JsonConvert.DeserializeObject<ParseItem>(output);
+            listview.ItemsSource = date.Items;
         }
 
     }

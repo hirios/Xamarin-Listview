@@ -4,6 +4,7 @@
              x:Class="primeiroAPP.MainPage">
 
     <StackLayout>
+        <SearchBar TextChanged="OnTextChanged" Placeholder="Título..." PlaceholderColor="Gray" CancelButtonColor="Aqua" TextColor="Black"/>
         <ListView x:Name="listview" HasUnevenRows="True">
             <ListView.ItemTemplate>
                 <DataTemplate>

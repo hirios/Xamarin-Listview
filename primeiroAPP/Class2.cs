@@ -2,31 +2,26 @@
 using System.Diagnostics;
 using System.IO;
 using System.Net;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 
 namespace primeiroAPP
 {
     public class PYTHON
     {
+        private HttpClient _client = new HttpClient();
 
-        public string requests(string url)
+        public async Task<string> Requests(string url)
         {
-            WebRequest request = WebRequest.Create(
-                url);
-            // If required by the server, set the credentials.
-            request.Credentials = CredentialCache.DefaultCredentials;
+            var response = await _client.GetAsync(url);
+            if (response.StatusCode == HttpStatusCode.NotFound)
+            {
+                return await Task.FromResult("Null");
+            }
 
-            // Get the response.
-            WebResponse response = request.GetResponse();
-
-            Stream dataStream = response.GetResponseStream();
-            StreamReader reader = new StreamReader(dataStream);
-            string responseFromServer = reader.ReadToEnd();
-            response.Close();
-            return responseFromServer;
-
+            return await response.Content.ReadAsStringAsync();
         }
-
 
         public void print(string text)
         {
